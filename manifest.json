@@ -1,0 +1,19 @@
+{
+    "name": "R18Twitter",
+    "version": "0.3.2",
+    "manifest_version": 3,
+    "description": "twitterをR18ワードあふれる魔境に変換します。下ネタに弱い方は使用しないでください。",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["https://twitter.com/*"],
+        "js": ["main.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
